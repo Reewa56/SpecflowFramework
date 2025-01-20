@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|c:\\users\\ravik\\source\\repos\\northstandardproject\\stepdefinitions\\titlevalidationstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|solutionrelative:stepdefinitions\\titlevalidationstep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|c:\\users\\ravik\\source\\repos\\northstandardproject\\stepdefinitions\\linkteststep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|solutionrelative:stepdefinitions\\linkteststep.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|c:\\users\\ravik\\source\\repos\\northstandardproject\\stepdefinitions\\linkteststep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|solutionrelative:stepdefinitions\\linkteststep1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|c:\\users\\ravik\\source\\repos\\northstandardproject\\pages\\linktestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|solutionrelative:pages\\linktestvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|c:\\users\\ravik\\source\\repos\\northstandardproject\\features\\titlevalidation.feature||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7206EABE-CF10-4DD5-9D58-66B5B9A231F6}|NorthStandardProject.csproj|solutionrelative:features\\titlevalidation.feature||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TitleValidationStep.cs",
+              "DocumentMoniker": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\StepDefinitions\\TitleValidationStep.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\TitleValidationStep.cs",
+              "ToolTip": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\StepDefinitions\\TitleValidationStep.cs",
+              "RelativeToolTip": "StepDefinitions\\TitleValidationStep.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T23:36:38.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LinkTestStep1.cs",
+              "DocumentMoniker": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\StepDefinitions\\LinkTestStep1.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\LinkTestStep1.cs",
+              "ToolTip": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\StepDefinitions\\LinkTestStep1.cs",
+              "RelativeToolTip": "StepDefinitions\\LinkTestStep1.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T21:26:51.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LinkTestValidation.cs",
+              "DocumentMoniker": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\Pages\\LinkTestValidation.cs",
+              "RelativeDocumentMoniker": "Pages\\LinkTestValidation.cs",
+              "ToolTip": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\Pages\\LinkTestValidation.cs",
+              "RelativeToolTip": "Pages\\LinkTestValidation.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T20:24:47.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LinkTestStep.cs",
+              "DocumentMoniker": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\StepDefinitions\\LinkTestStep.cs",
+              "RelativeDocumentMoniker": "StepDefinitions\\LinkTestStep.cs",
+              "ToolTip": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\StepDefinitions\\LinkTestStep.cs",
+              "RelativeToolTip": "StepDefinitions\\LinkTestStep.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T20:23:57.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TitleValidation.feature",
+              "DocumentMoniker": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\Features\\TitleValidation.feature",
+              "RelativeDocumentMoniker": "Features\\TitleValidation.feature",
+              "ToolTip": "C:\\Users\\ravik\\source\\repos\\NorthStandardProject\\Features\\TitleValidation.feature",
+              "RelativeToolTip": "Features\\TitleValidation.feature",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-14T20:23:39.526Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
