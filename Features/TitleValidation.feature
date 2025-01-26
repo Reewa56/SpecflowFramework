@@ -1,12 +1,19 @@
 ﻿Feature: Page title validation
 Background: 
-	When I navigate to the page url "https://ultimateqa.com/automation"
+	Given I have the page url "https://practicesoftwaretesting.com/"
+	When I navigate to the page
 
 Scenario: Check page title		
-	Then the page title should be "Automation Practice - Ultimate QA"
+	Then the page title should be "Practice Software Testing - Toolshop - v5.0"
 	
-Scenario: Click Services check
-	And Click on Services link
+Scenario: Validate sign in functionality
+	When I click on sign in
+	And I entered email address
+	And I entered the password
+	And I click the sign in button
 
-Scenario: Click Newsletter link
-	And Click on Newsletter link
+
+	
+
+
+
