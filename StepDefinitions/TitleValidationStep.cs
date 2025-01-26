@@ -22,31 +22,26 @@ namespace NorthStandardProject.StepDefinitions
        
         private String _url;
 
-      /*  [Given(@"I have set the chrome driver")]
-        public void GivenIhavesetthechromedriver()
+        [Given(@"I have the page url ""(.*)""")]
+        public void GivenIhavethepageurl(string url)
         {
-            //  titleValidationTestPage.setWebDriver();
-            IWebDriver driver = new ChromeDriver();
-            titleValidationTestPage = new TitleValidationTest(driver);
-        }*/
-
-        [When(@"I navigate to the page url ""(.*)""")]
-        public void WhenInavigatetothepageurl(String url)
-        {
-            //titleValidationTestPage = new TitleValidationTest(driver);
             _url = url;
+        }
+
+        [When(@"I navigate to the page")]
+        public void WhenInavigatetothepage()
+        {
             titleValidationTestPage.NavigateUrl(_url);
         }
 
         
         [Then(@"the page title should be ""(.*)""")]
-        public void WhenThePageTitleShouldBe(String title)
+        public void WhenThePageTitleShouldBe(string title)
         {
-            Assert.That(title, Is.EqualTo(titleValidationTestPage.CheckTitle()));
-            
+            Assert.That(title, Is.EqualTo(titleValidationTestPage.CheckTitle()));            
         }
 
-       
+
 
     }
 
