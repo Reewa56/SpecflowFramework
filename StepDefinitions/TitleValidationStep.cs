@@ -44,7 +44,7 @@ namespace NorthStandardProject.StepDefinitions
             Assert.That(title, Is.EqualTo(titleValidationTestPage.CheckTitle()));            
         }
 
-       
+
 
     }
 

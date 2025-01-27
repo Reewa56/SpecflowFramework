@@ -11,6 +11,7 @@ using OpenQA.Selenium;
 using RestSharp;
 
 
+
 namespace NorthStandardProject.StepDefinitions
 {
     [Binding]
@@ -19,8 +20,7 @@ namespace NorthStandardProject.StepDefinitions
     public class SignInStep
     {
         private readonly IWebDriver driver;
-        
-
+       
         public SignInStep(IWebDriver driver)
         {
             this.driver = driver;
@@ -61,7 +61,6 @@ namespace NorthStandardProject.StepDefinitions
         {
             Assert.That(signInTest.SignInValidation, Is.EqualTo("Jack Howe"));
         }
-
 
     }
 }

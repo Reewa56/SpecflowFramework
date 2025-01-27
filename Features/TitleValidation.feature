@@ -14,9 +14,3 @@ Scenario: Validate sign in functionality
 	And I entered the password
 	And I click the sign in button
 	Then I validate that sign in is successfully done
-
-
-	
-
-
-
