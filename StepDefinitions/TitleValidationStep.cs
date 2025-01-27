@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using NorthStandardProject.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -7,6 +8,8 @@ using OpenQA.Selenium.Chrome;
 namespace NorthStandardProject.StepDefinitions
 {
     [Binding]
+    [TestFixture]
+    
     public sealed class TitleValidationStep 
     {
       //  private readonly ScenarioContext _scenarioContext;

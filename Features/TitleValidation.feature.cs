@@ -87,12 +87,15 @@ namespace NorthStandardProject.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check page title")]
+        [NUnit.Framework.CategoryAttribute("Smoke")]
         public void CheckPageTitle()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "Smoke"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check page title", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -105,6 +108,24 @@ this.ScenarioInitialize(scenarioInfo);
 #line 2
 this.FeatureBackground();
 #line hidden
+
+#line 8
+ testRunner.Then("the page title should be \"Practice Software Testing - Toolshop - v5.0\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Validate sign in functionality")]
+        [NUnit.Framework.CategoryAttribute("Regression")]
+        public void ValidateSignInFunctionality()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Regression"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate sign in functionality", null, tagsOfScenario, argumentsOfScenario, featureTags);
+=======
 #line 7
  testRunner.Then("the page title should be \"Practice Software Testing - Toolshop - v5.0\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -135,14 +156,25 @@ this.FeatureBackground();
 #line 10
  testRunner.When("I click on sign in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+
 #line 11
  testRunner.And("I entered email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("I entered the password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+
+ testRunner.When("I click on sign in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 13
+ testRunner.And("I entered email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
+ testRunner.And("I entered the password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
  testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 16
+ testRunner.Then("I validate that sign in is successfully done", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
