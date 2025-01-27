@@ -78,18 +78,24 @@ namespace NorthStandardProject.Features
 #line 2
 #line hidden
 #line 3
- testRunner.When("I navigate to the page url \"https://ultimateqa.com/automation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have the page url \"https://practicesoftwaretesting.com/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 4
+ testRunner.When("I navigate to the page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Check page title")]
+        [NUnit.Framework.CategoryAttribute("Smoke")]
         public void CheckPageTitle()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "Smoke"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check page title", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 5
+
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -102,48 +108,39 @@ this.ScenarioInitialize(scenarioInfo);
 #line 2
 this.FeatureBackground();
 #line hidden
-#line 6
- testRunner.Then("the page title should be \"Automation Practice - Ultimate QA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click Services check")]
-        public void ClickServicesCheck()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click Services check", null, tagsOfScenario, argumentsOfScenario, featureTags);
+
 #line 8
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 2
-this.FeatureBackground();
-#line hidden
-#line 9
- testRunner.And("Click on Services link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the page title should be \"Practice Software Testing - Toolshop - v5.0\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click Newsletter link")]
-        public void ClickNewsletterLink()
+        [NUnit.Framework.DescriptionAttribute("Validate sign in functionality")]
+        [NUnit.Framework.CategoryAttribute("Regression")]
+        public void ValidateSignInFunctionality()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Regression"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate sign in functionality", null, tagsOfScenario, argumentsOfScenario, featureTags);
+=======
+#line 7
+ testRunner.Then("the page title should be \"Practice Software Testing - Toolshop - v5.0\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Validate sign in functionality")]
+        public void ValidateSignInFunctionality()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click Newsletter link", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate sign in functionality", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -155,9 +152,29 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 2
 this.FeatureBackground();
+#line hidden
+#line 10
+ testRunner.When("I click on sign in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+
+#line 11
+ testRunner.And("I entered email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("Click on Newsletter link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+
+ testRunner.When("I click on sign in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 13
+ testRunner.And("I entered email address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 14
+ testRunner.And("I entered the password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 15
+ testRunner.And("I click the sign in button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 16
+ testRunner.Then("I validate that sign in is successfully done", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

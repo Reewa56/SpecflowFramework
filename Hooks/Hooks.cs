@@ -7,6 +7,8 @@ using BoDi;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+//[assembly: Parallelizable(ParallelScope.All)]
+//[assembly: LevelOfParallelism(2)]
 
 namespace NorthStandardProject
 {
@@ -32,8 +34,20 @@ namespace NorthStandardProject
         [AfterScenario]
         public void DeleteBrowser()
         {
+
             var driver = container.Resolve<IWebDriver>();
+            container.Dispose();
             driver.Quit();
+            driver.Dispose();
         }
+
+        //private void DisposeSpecflowContext()
+        //{
+        //    try
+        //    {
+        //        container.Dispose();
+        //    }
+        //    catch { }
+        //}
     }
 }
