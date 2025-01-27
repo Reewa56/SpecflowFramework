@@ -6,7 +6,7 @@ node{
     bat 'C:/Users/ravik/Downloads/nuget.exe restore NorthStandardProject.sln'
     }
     stage ('build'){
-    bat 'msbuild NorthStandardProject.sln /p:Configuration=Release'
+    bat 'dotnet build --configuration Release'
     }
     stage ('test'){
     bat 'C:/Users/ravik/.nuget/packages/nunit.consolerunner/3.19.1/tools/nunit3-console.exe NorthStandardProject/bin/Debug/net8.0/NorthStandardProject.dll'
