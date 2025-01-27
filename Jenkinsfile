@@ -9,6 +9,5 @@ node{
     bat 'dotnet build --configuration Release'
     }
     stage ('test'){
-    bat 'C:/Users/ravik/.nuget/packages/nunit.consolerunner/3.19.1/tools/nunit3-console.exe NorthStandardProject/bin/Debug/net8.0/NorthStandardProject.dll'
-    }
+    bat 'dotnet test --no-build --verbosity-normal'
 }
