@@ -1,6 +1,6 @@
 node{
     stage ('checkout code'){
-    git "https://github.com/Reewa56/SpecflowFramework.git"
+    git branch: 'main', url: 'https://github.com/Reewa56/SpecflowFramework.git'
     }
     stage ('restore nuget'){
     bat 'C:/Users/ravik/AppData/Local/AzureFunctionsTools/Release/1.13.2/cli_x64/NuGet.exe restore NorthStandardProject.sln'
