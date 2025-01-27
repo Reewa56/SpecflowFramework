@@ -26,7 +26,7 @@ namespace NorthStandardProject.Pages
 
         public void EnterEmail()
         {
-            driver.FindElement(By.Id("email")).SendKeys("customer@practicesoftwaretesting.com");
+            driver.FindElement(By.Id("email")).SendKeys("customer2@practicesoftwaretesting.com");
         }
 
         public void EnterPassword()
@@ -39,6 +39,12 @@ namespace NorthStandardProject.Pages
             driver.FindElement(By.ClassName("btnSubmit")).Click();
         }
 
-       
+        public string SignInValidation()
+        {
+            IWebElement user = driver.FindElement(By.XPath("//*[@data-test='nav-menu']"));
+            Console.WriteLine(user.Text);
+            return user.Text;
+
+        }
     }
 }

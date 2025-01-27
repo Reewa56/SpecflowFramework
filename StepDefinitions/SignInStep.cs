@@ -10,12 +10,15 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using RestSharp;
 
+
 namespace NorthStandardProject.StepDefinitions
 {
     [Binding]
+    [TestFixture]
+    
     public class SignInStep
     {
-        private IWebDriver driver;
+        private readonly IWebDriver driver;
         
 
         public SignInStep(IWebDriver driver)
@@ -50,9 +53,14 @@ namespace NorthStandardProject.StepDefinitions
         public void WhenIclickthesigninbutton()
         {
             signInTest.ClickLogin();
+            Thread.Sleep(2000);
         }
 
-       
+        [Then(@"I validate that sign in is successfully done")]
+        public void ThenIvalidatethatsigninissuccessfullydone()
+        {
+            Assert.That(signInTest.SignInValidation, Is.EqualTo("Jack Howe"));
+        }
 
 
     }
