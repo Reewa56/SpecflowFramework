@@ -1,8 +1,8 @@
-using System.ComponentModel.DataAnnotations;
+using System.Configuration;
 using NorthStandardProject.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using TechTalk.SpecFlow;
 
 
 namespace NorthStandardProject.StepDefinitions
@@ -14,16 +14,18 @@ namespace NorthStandardProject.StepDefinitions
     {
       //  private readonly ScenarioContext _scenarioContext;
         private readonly IWebDriver? driver;
+        private string? urlConfig;
+        string _url;
 
         TitleValidationTest titleValidationTestPage;
-
+        
         public TitleValidationStep(IWebDriver driver)
         {
             this.driver = driver;
             titleValidationTestPage = new TitleValidationTest(driver);
         }
-       
-        private String _url;
+
+
 
         [Given(@"I have the page url ""(.*)""")]
         public void GivenIhavethepageurl(string url)

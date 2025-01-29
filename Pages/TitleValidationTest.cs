@@ -22,7 +22,7 @@ namespace NorthStandardProject.Pages
             this.driver = driver;
         }
 
-        public void NavigateUrl(String url)
+        public void NavigateUrl(string url)
         {
             driver.Navigate().GoToUrl(url);
         }

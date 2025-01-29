@@ -9,6 +9,6 @@ node{
     bat 'dotnet build --configuration Release'
     }
     stage ('test'){
-    bat 'dotnet test --no-build --verbosity-normal'
+    bat 'dotnet test'
     }
 }

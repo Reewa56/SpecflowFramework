@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using RestSharp;
+using TechTalk.SpecFlow;
 
 namespace NorthStandardProject.StepDefinitions
 {
