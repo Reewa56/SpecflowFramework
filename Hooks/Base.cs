@@ -14,12 +14,12 @@ using TechTalk.SpecFlow;
 namespace NorthStandardProject
 {
     [Binding]
-    public class Hooks
+    public class Base
     {
         private IObjectContainer container;
         //  private DriverHelper _driverhelper;
 
-        public Hooks(IObjectContainer container)
+        public Base(IObjectContainer container)
         {
             this.container = container;
         }
