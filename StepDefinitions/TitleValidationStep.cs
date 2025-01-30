@@ -1,4 +1,5 @@
 using System.Configuration;
+using Microsoft.Web.Administration;
 using NorthStandardProject.Pages;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -14,8 +15,7 @@ namespace NorthStandardProject.StepDefinitions
     {
       //  private readonly ScenarioContext _scenarioContext;
         private readonly IWebDriver? driver;
-        private string? urlConfig;
-        string _url;
+        private string? _url = null;
 
         TitleValidationTest titleValidationTestPage;
         
@@ -27,10 +27,13 @@ namespace NorthStandardProject.StepDefinitions
 
 
 
-        [Given(@"I have the page url ""(.*)""")]
-        public void GivenIhavethepageurl(string url)
+        [Given(@"I have the page url")]
+        public void GivenIhavethepageurl()
         {
-            _url = url;
+            if (_url == null)
+            {
+                _url =  ConfigurationManager.AppSettings["url"];
+            }
         }
 
         [When(@"I navigate to the page")]

@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 using RestSharp;
 using SeleniumExtras.WaitHelpers;
+using System.Configuration;
 
 namespace NorthStandardProject.Pages
 {
@@ -26,12 +27,15 @@ namespace NorthStandardProject.Pages
 
         public void EnterEmail()
         {
-            driver.FindElement(By.Id("email")).SendKeys("customer2@practicesoftwaretesting.com");
+            string username = ConfigurationManager.AppSettings["username"];
+            driver.FindElement(By.Id("email")).SendKeys(username);
+
         }
 
         public void EnterPassword()
         {
-            driver.FindElement(By.Id("password")).SendKeys("welcome01");
+            string password = ConfigurationManager.AppSettings["password"]; 
+            driver.FindElement(By.Id("password")).SendKeys(password);
         }
 
         public void ClickLogin()

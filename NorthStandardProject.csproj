@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+	  <OutputType>exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -9,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageReference Include="Microsoft.Web.Administration" Version="11.1.0" />
     <PackageReference Include="NUnit.ConsoleRunner" Version="3.19.1" />
     <PackageReference Include="RestSharp" Version="112.1.0" />
     <PackageReference Include="Selenium.Support" Version="4.27.0" />
@@ -28,5 +30,9 @@
     <Folder Include="Drivers\" />
     <Folder Include="Support\" />
   </ItemGroup>
+
+	<Target Name ="CopyCustomContent" AfterTargets ="AfterBuild">
+		<Copy SourceFiles ="Web.config" DestinationFiles="$(OutDir)\testhost.dll.config"/>
+	</Target>
 
 </Project>

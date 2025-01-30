@@ -1,6 +1,6 @@
 Feature: SignIn validation
 Background: 
-	Given I have the page url "https://practicesoftwaretesting.com/"
+	Given I have the page url
 	When I navigate to the page
 
 @Regression	
